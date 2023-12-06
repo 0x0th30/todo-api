@@ -1,5 +1,5 @@
 *
 
 !app/*
-!venv/*
 !config/requirements.txt
+!boot.sh
