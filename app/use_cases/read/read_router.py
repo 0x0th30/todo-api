@@ -1,8 +1,8 @@
 from typing import Optional
 from fastapi import APIRouter, Response
-from src.use_cases.read.read_business import ReadTask
-from src.models.task import TaskCollection
-from src.common.exceptions.task_exception import NotFoundTask
+from app.use_cases.read.read_business import ReadTask
+from app.models.task import TaskCollection
+from app.common.exceptions.task_exception import NotFoundTask
 
 router = APIRouter()
 read_task_business = ReadTask(TaskCollection)

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Response
-from src.api.schemas.task import TaskModel
-from src.use_cases.update.update_business import UpdateTask
-from src.models.task import TaskCollection
+from app.api.schemas.task import TaskModel
+from app.use_cases.update.update_business import UpdateTask
+from app.models.task import TaskCollection
 
 router = APIRouter()
 update_task_business = UpdateTask(TaskCollection)

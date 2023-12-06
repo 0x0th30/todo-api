@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Response
-from src.use_cases.delete.delete_business import DeleteTask
-from src.models.task import TaskCollection
+from app.use_cases.delete.delete_business import DeleteTask
+from app.models.task import TaskCollection
 
 router = APIRouter()
 delete_task_business = DeleteTask(TaskCollection)

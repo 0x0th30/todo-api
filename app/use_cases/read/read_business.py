@@ -2,7 +2,7 @@ import structlog
 from typing import Optional
 from bson.objectid import ObjectId
 from pymongo.collection import Collection
-from src.common.exceptions.task_exception import NotFoundTask
+from app.common.exceptions.task_exception import NotFoundTask
 
 logger = structlog.get_logger()
 

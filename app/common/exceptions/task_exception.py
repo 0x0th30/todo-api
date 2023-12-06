@@ -1,4 +1,4 @@
-from src.common.exceptions.application_exception import ApplicationException
+from app.common.exceptions.application_exception import ApplicationException
 
 class TaskException(ApplicationException):
     pass

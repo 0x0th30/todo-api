@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Response
-from src.api.schemas.task import TaskModel
-from src.use_cases.create.create_business import CreateTask
-from src.models.task import TaskCollection
+from app.api.schemas.task import TaskModel
+from app.use_cases.create.create_business import CreateTask
+from app.models.task import TaskCollection
 
 router = APIRouter()
 create_task_business = CreateTask(TaskCollection)
